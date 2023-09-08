@@ -461,8 +461,96 @@
                     </li>
                 </ul>
             </div>
+            <!-- Foooter subscribe -->
+            <div class="footer-subscribe">
+                <p class="subscribe-title">Subscribe</p>
+                <form class="footer-subscribe-form">
+                    <!-- <div class="subscribe-container"> -->
+                    <label for="footer-user-mail" class="subscribe-mail-form">
+                        <input type="email" class="input-subscribe-mail" name="footer-user-mail" id="footer-user-mail"
+                            placeholder="E-mail">
+                    </label>
+                    <button class="footer-subscribe-button">Subscribe
+                        <!-- <span class="subscribe-button"> -->
+                        <svg class="subscribe-icon" width="24" height="24" aria-label="telegram_icon">
+                            <use href="./images/modal.svg#icon-frame-teleg"></use>
+                        </svg>
+                        <!-- </span> -->
+                    </button>
+                </form>
+            </div>
         </div>
+        <!-- </div> -->
     </footer>
+
+    <!-- Backdrop modal window  is-open-->
+    <div class="backdrop  is-open">
+        <div class="contact-form-container">
+            <button class="contact-form-close-button">
+                <svg class="contact-form-close-icon" width="8" height="8" aria-label="close-icon">
+                    <use href="./images/modal.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="contact-form-title">Leave your contacts and we will call you back</p>
+            <form class="contact-form" name="contact-window">
+                <div class="contact-form-wrapper">
+                    <label class="label-contact-form" for="user_name">Name</label>
+                    <div class="contact-form-input-wrapper">
+                        <input class="contact-form-input" type="text" id="user_name" name="user-name" required autofocus
+                            pattern="[a-zA-z']+" title="Adam">
+                        <svg class="contact-form-name-icon" width="18" height="18" aria-label="icon-person-black">
+                            <use href="./images/modal.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <label class="label-contact-form" for="user-phone">Phone</label>
+                    <div class="contact-form-input-wrapper">
+                        <input class="contact-form-input" type="tel" id="user-phone" name="user-phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required>
+                        <svg class="contact-form-name-icon" width="18" height="18" aria-label="icon-phone-black">
+                            <use href="./images/modal.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <label class="label-contact-form" for="user-mail">Email</label>
+                    <div class="contact-form-input-wrapper">
+                        <input class="contact-form-input" type="email" id="user-mail" name="user-mail" required>
+                        <svg class="contact-form-name-icon" width="18" height="18" aria-label="icon-email-black">
+                            <use href="./images/modal.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="contact-form-wrapper">
+                    <label class="textarea-contact-form" for="comments">Comment
+                        <textarea class="contact-form-comment" name="comments-contact" id="comments"
+                            placeholder="Text input"></textarea>
+                    </label>
+                </div>
+                <div class="accept-box-container">
+                    <input class="accept-box descr-title" type="checkbox" name="accept-box" id="accept-box" value="true"
+                        required checked>
+                    <label class="label-checkbox-accept" for="accept-box">
+                        <span class="contact-form-checkbox">
+                            <svg class="check-box-icon" width="16" height="16" aria-label="icon-property">
+                                <use href="./images/modal.svg#icon-property">
+
+                                </use>
+                            </svg>
+                        </span>
+                        I
+                        accept
+                        the terms and
+                        conditions of the <a href="./index.html" class="accept-box-link">Privacy
+                            Policy</a>
+                    </label>
+                </div>
+                <button class="form-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
