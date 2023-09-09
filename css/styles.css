@@ -855,9 +855,14 @@ footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+span {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+}
+
 .check-box-icon {}
 
-.accept-box:focus+.check-box-icon {
+.accept-box:checked+.check-box-icon {
     fill: #f4f4fd;
 }
 
@@ -868,7 +873,7 @@ footer {
 
 }
 
-.accept-box:focus+.label-checkbox-accept>.contact-form-checkbox {
+.accept-box:focus+.label-checkbox-accept>.span {
     outline: 1px solid var(--OCEAN, #404BBF);
 }
 
